@@ -11,6 +11,18 @@
             <a href="/projects">Projects</a>
             <a href="/contact">Contact</a>
         </div>
+        
         <h1>Contact Page</h1>
+        <form action="">
+            <p>Name: <input type="text" name="name"></p>
+            <p>Email: <input type="text" name="email"></p>
+            <p>Message:</p>
+            <p><textarea name="" id="" cols="30" rows="10"></textarea></p>
+            <p><input type="submit" name="submit" value="Submit"></p>
+        </form>
+        @{
+            DateTime date = DateTime.Now;
+            <p>@date</p>    
+        }
     </body>
 </html>
