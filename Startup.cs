@@ -28,7 +28,7 @@ namespace webtest_proj
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseMvc(); //when MVC is added
+            app.UseMvc();
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("hello");

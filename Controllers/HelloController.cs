@@ -1,14 +1,16 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
- 
+
 namespace webtest_proj.Controllers
 {
     public class HelloController : Controller
     {
-        [HttpGetAttribute]
-        public string Index()
+        [HttpGet]
+        [Route("")]
+        public IActionResult Index()
         {
-            return "Hello World!";
+            return View("Index");
         }
+
     }
 }
